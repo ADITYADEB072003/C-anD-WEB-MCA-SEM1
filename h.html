@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Elements and Pseudo Classes Demo</title>
+
+    <style>
+
+        /* =========================
+           PSEUDO ELEMENTS
+           ========================= */
+
+        /* ::before */
+        h1::before {
+            content: "👉 ";
+        }
+
+        /* ::after */
+        h1::after {
+            content: " ⭐";
+        }
+
+        /* ::first-letter */
+        p::first-letter {
+            color: red;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        /* ::first-line */
+        .para::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* ::selection */
+        p::selection {
+            background: yellow;
+            color: black;
+        }
+
+        /* ::marker */
+        li::marker {
+            color: green;
+        }
+
+        /* ::placeholder */
+        input::placeholder {
+            color: gray;
+        }
+
+
+        /* =========================
+           PSEUDO CLASSES
+           ========================= */
+
+        /* :hover
+           Applies when mouse is placed over the element */
+        h1:hover {
+            color: purple;
+        }
+
+        /* :active
+           Applies while clicking the element */
+        button:active {
+            background-color: red;
+            color: white;
+        }
+
+        /* :focus
+           Applies when input is selected */
+        input:focus {
+            border: 3px solid blue;
+            outline: none;
+        }
+
+        /* :first-child
+           Selects the first child */
+        li:first-child {
+            color: red;
+        }
+
+        /* :last-child
+           Selects the last child */
+        li:last-child {
+            color: blue;
+        }
+
+        /* :nth-child()
+           Selects a specific child */
+        li:nth-child(2) {
+            color: orange;
+        }
+
+        /* :checked
+           Applies when checkbox/radio is selected */
+        input[type="checkbox"]:checked {
+            accent-color: green;
+        }
+
+        /* :disabled
+           Applies to disabled input */
+        input:disabled {
+            background-color: lightgray;
+        }
+
+        /* :not()
+           Selects elements that do NOT match */
+        li:not(:first-child) {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo Classes and Elements</h1>
+
+    <p class="para">
+        This is a paragraph demonstrating CSS pseudo elements.
+        Try selecting this text with your mouse.
+    </p>
+
+    <h3>Subjects</h3>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <br>
+
+    <!-- Focus pseudo-class -->
+    <input type="text" placeholder="Enter your name">
+
+    <br><br>
+
+    <!-- Checked pseudo-class -->
+    <input type="checkbox"> I like programming
+
+    <br><br>
+
+    <!-- Disabled pseudo-class -->
+    <input type="text" value="Disabled field" disabled>
+
+    <br><br>
+
+    <!-- Active pseudo-class -->
+    <button>Click Me</button>
+
+</body>
+</html>

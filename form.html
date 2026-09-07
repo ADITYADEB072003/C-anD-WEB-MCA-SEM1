@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+    <fieldset>
+        <legend>Student Details</legend>
+
+        <!-- TEXT FIELD -->
+        <label>Name:</label>
+        <input type="text" name="name">
+        <br><br>
+
+        <!-- RADIO BUTTON -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <!-- CHECKBOX -->
+        <label>Subjects:</label>
+        <input type="checkbox" name="subject" value="math"> Math
+        <input type="checkbox" name="subject" value="science"> Science
+        <input type="checkbox" name="subject" value="computer"> Computer
+        <br><br>
+
+        <!-- SELECT / DROPDOWN -->
+        <label>Course:</label>
+        <select name="course">
+            <option>Select Course</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+        </select>
+        <br><br>
+
+        <!-- DATALIST -->
+        <label>City:</label>
+        <input list="cities" name="city">
+
+        <datalist id="cities">
+            <option value="Kolkata">
+            <option value="Delhi">
+            <option value="Mumbai">
+            <option value="Chennai">
+            <option value="Bangalore">
+        </datalist>
+
+        <br><br>
+
+        <!-- TEXTAREA -->
+        <label>Address:</label>
+        <br>
+        <textarea rows="5" cols="40"
+                  placeholder="Enter your address"></textarea>
+
+        <br><br>
+
+        <!-- PROGRESS BAR -->
+        <label>Course Progress:</label>
+        <progress value="7" max="100"></progress>
+        70%
+        
+        <br><br>
+
+        <!-- OUTPUT -->
+        <label>Result:</label>
+        <output>Pass</output>
+
+        <br><br>
+
+        <!-- SUBMIT -->
+        <input type="submit" value="Submit">
+
+        <!-- RESET -->
+        <input type="reset" value="Reset">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>

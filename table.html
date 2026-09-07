@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Combinators</title>
+
+    <style>
+        /* 1. DESCENDANT SELECTOR: space
+           Selects all p elements inside .parent
+        */
+        .parent p {
+            color: red;
+        }
+
+        /* 2. CHILD SELECTOR: >
+           Selects only direct p children
+        */
+        .parent > p {
+            background-color: yellow;
+        }
+
+        /* 3. ADJACENT SIBLING: +
+           Selects only the p immediately after h2
+        */
+        h3+ p {
+            color: blue;
+        }
+
+        /* 4. GENERAL SIBLING: ~
+           Selects all p siblings after h2
+        */
+        h3 ~ p {
+            color:brown;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Combinators</h1>
+
+    <div class="parent">
+<h3></h3>
+        <p>Direct Child 1</p>
+
+        <div>
+            <p>Nested Paragraph</p>
+        </div>
+
+        <p>Direct Child 2</p>
+
+    </div>
+
+
+    <h2>Sibling Example</h2>
+
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Third Paragraph</p>
+    <p>s</p>
+
+</body>
+</html>
