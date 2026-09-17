@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            height: 1500px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 80px;
+            padding: 10px;
+            margin: 20px;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+
+        /* 1. Static */
+        .static {
+            z-index: 1;
+            position: static;
+        }
+
+        /* 2. Relative */
+        .relative {
+            z-index: 2;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            background-color: lightgreen;
+        }
+
+        /* Parent for absolute positioning */
+        .parent {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            margin: 30px;
+            border: 3px solid black;
+        }
+
+        /* 3. Absolute */
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            margin: 0;
+            background-color: orange;
+        }
+
+        /* 4. Fixed */
+        .fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            margin: 0;
+            background-color: pink;
+            z-index: 10;
+        }
+
+        /* 5. Sticky */
+        .sticky {
+            position: sticky;
+            top: 0;
+            padding: 20px;
+            background-color: yellow;
+            text-align: center;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Positioning Demo</h1>
+
+    <!-- Static -->
+    <div class="box static">
+        Static
+    </div>
+
+    <!-- Relative -->
+    <div class="box relative">
+        Relative
+    </div>
+
+    <!-- Sticky -->
+    <div class="sticky">
+        Sticky Navigation
+    </div>
+
+    <!-- Absolute -->
+    <div class="parent">
+        Parent
+        <div class="box absolute">
+            Absolute
+        </div>
+    </div>
+
+    <h2 style="text-align:center;">
+        Scroll Down to Test Sticky & Fixed
+    </h2>
+
+    <p style="text-align:center;">
+        Keep scrolling...
+    </p>
+
+    <!-- Fixed -->
+    <div class="box fixed">
+        Fixed
+    </div>
+
+</body>
+</html>

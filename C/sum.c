@@ -16,7 +16,7 @@ int main()
         // Starts from (2*i - 2) and goes down back to the row value
         for(j = 2*i - 2; j >= i; j--)
         {
-            printf("\t");
+           
             printf("%d", j);
         }
         // Move to a new line after each row is printed

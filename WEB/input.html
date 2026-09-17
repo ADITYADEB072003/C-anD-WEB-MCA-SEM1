@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Two Numbers</title>
+</head>
+<style>
+    *{
+        text-align: center;
+        background-color: black;
+        color: white;
+
+    }
+    form {
+        cursor:alias;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    button{
+        
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="number"], input[type="text"] {
+        width: 200px;
+        padding: 5px;
+       color: black;
+border: 1px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+        align-items: center;
+        margin: 5px 0;
+    }
+    input:hover{
+        background-color: lightblue;
+        box-shadow: 0 0 5px lightblue;
+      
+    }
+</style>
+<body>
+
+    <h2>Add Two Numbers</h2>
+
+    <form>
+        <label>First Number:</label>
+        <input type="number" id="num1">
+
+        <br><br>
+
+        <label>Second Number:</label>
+        <input type="number" id="num2">
+
+        <br><br>
+
+        <button type="button" onclick="addNumbers()">Add</button>
+
+        <br><br>
+
+        <label>Result:</label>
+        <input type="text" id="result" readonly>
+    </form>
+
+    <script>
+        function addNumbers() {
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+
+            let sum = a + b;
+
+
+            document.getElementById("result").value = sum;
+        }
+    </script>
+
+</body>
+</html>
