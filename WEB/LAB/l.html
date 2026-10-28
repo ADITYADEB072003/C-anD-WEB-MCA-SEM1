@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        form {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        input, button {
+            padding: 8px;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <h2>Marks Calculator</h2>
+
+    <label for="studentName">Name:</label>
+    <input type="text" id="studentName" required>
+    <br>
+
+    <label for="marks">Marks:</label>
+    <input type="number" id="marks" min="0" max="100" required>
+    <br>
+
+    <button type="button" onclick="calculate()">Submit</button>
+</form>
+
+<script>
+    function calculate() {
+        let name = document.getElementById("studentName").value;
+        let marks = Number(document.getElementById("marks").value);
+
+        if (name.trim() === "" || 
+            document.getElementById("marks").value === "") {
+            alert("Please fill all fields");
+            return;
+        }
+
+        if (marks < 0 || marks > 100) {
+            alert("Marks must be between 0 and 100");
+            return;
+        }
+
+        if (marks >= 40) {
+            alert("Pass");
+        } else {
+            alert("Fail");
+        }
+    }
+</script>
+
+</body>
+</html>

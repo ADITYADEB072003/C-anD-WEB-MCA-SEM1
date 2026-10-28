@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM classList Example</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            border: 3px solid red;
+        }
+        .k{
+            background-color:pink;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myBox" class="box">Hello World!</div>
+
+    <br>
+
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+    <button onclick="toggleClass()">Toggle Class</button>
+    <button onclick="checkClass()">Check Class</button>
+
+    <script>
+        let box = document.getElementById("myBox");
+
+        function addClass() {
+            box.classList.add("highlight");
+        }
+
+        function removeClass() {
+            box.classList.remove("highlight");
+        }
+
+        function toggleClass() {
+            box.classList.toggle("k");
+        }
+
+        function checkClass() {
+            alert(box.classList.contains("highlight"));
+        }
+    </script>
+
+</body>
+</html>

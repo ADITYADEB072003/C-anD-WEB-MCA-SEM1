@@ -1,6 +1,6 @@
 from yt_dlp import YoutubeDL
 
-playlist_url = "https://youtube.com/playlist?list=PLBlnK6fEyqRjNMcnL9EeVp5bnWXBgeIfB&si=yWr-9dZKs2DtZCfA"
+playlist_url = "https://youtube.com/playlist?list=PLxCzCOWd7aiHanm1nA5_fMwbx5dCNFkDX&si=Z_BdsV2lzBvJiquZ"
 
 ydl_opts = {
     "quiet": True,
@@ -22,4 +22,4 @@ with YoutubeDL(ydl_opts) as ydl:
             seen.add(video_id)
             f.write(f"https://www.youtube.com/watch?v={video_id}\n")
 
-print(f"Saved {len(seen)} unique video URLs to unique_playlist_urls.txt")
+print(f"Saved {len(seen)} unique video URLs to unique_playlist_urls2.txt")

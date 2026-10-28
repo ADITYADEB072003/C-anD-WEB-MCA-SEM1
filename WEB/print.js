@@ -16,5 +16,5 @@ const addNumbers = () => {
    for(let i=a.length;i>0;i++){
     document.write(a);
    }    
-   
+   removeAttribute("disabled");
 };

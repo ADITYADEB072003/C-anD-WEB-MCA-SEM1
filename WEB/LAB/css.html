@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            
+            grid-template-rows:repeat(2,3fr);
+            gap: 15px;
+        }
+
+        .box {
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .box1 { background-color: tomato; }
+        .box2 { background-color: royalblue; }
+        .box3 { background-color: seagreen; }
+        .box4 { background-color: darkorange; }
+        .box5 { background-color: purple; }
+        .box6 { background-color: teal; }
+
+      
+    </style>
+</head>
+<body>
+
+    <h2>Photo Gallery</h2>
+
+    <div class="gallery">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+        <div class="box box6">Box 6</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<script>
+    function a(){
+        let w=document.getElementById('check').value;
+        let p=document.getElementById('result');
+       
+        if (w%2==0){
+            p.textContent="EVEN";
+           
+        }
+        else{
+            p.textContent="Odd";
+            p.style.background="blue";
+        }
+        let fact=1;
+        for(let j=1;j<=w;j++){
+            fact*=j;
+        }
+        p.textContent += " | FACTORIAL = " + fact;
+        
+    }
+</script>
+</head>
+<body>
+   
+    <input type="number" id ="check">
+    <p id="result"></p>
+    <button type="submit" onclick="a()">SUBMIt</button>
+</body>

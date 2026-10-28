@@ -139,7 +139,7 @@ void showResult(Result r) {
     printf("\n========== QUIZ RESULTS ==========\n");
 
     printf("Score: %d/%d\n", r.score, r.attempted * 10);
-    printf("Correct answers: %d\n", r.correct);
+    printf("Correct answers: %d\n", r.correct); 
     printf("Wrong answers: %d\n", r.wrong - r.timeout);
     printf("Timed-out questions: %d\n", r.timeout);
 

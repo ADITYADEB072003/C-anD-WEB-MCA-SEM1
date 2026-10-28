@@ -32,7 +32,7 @@ arr.shift();
 // splice(start, deleteCount, addElement)
 
 // index 1 → remove 20 and add 3
-arr.splice(1, 1, 3);
+arr.splice(1, 2, 3);
 // [10, 3, 30, 40]
 
 
@@ -98,3 +98,8 @@ arr.reverse();
 
 console.log(arr);
 console.log(x);
+let fruits = ["Apple", "Banana", "Mango"];
+
+for (let fruit of fruits) {
+    console.log(fruit +'indexof', fruits.indexOf(fruit));
+}

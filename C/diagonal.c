@@ -35,6 +35,10 @@ int main(){
     int temp=0;
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
-            temp+=a[i][j]; }
-                temp+=a[i][j]; }
+            if(i==j){
+            temp+=a[i][j];
+         }
+                 }}
+        printf("%d",temp);
         }
+

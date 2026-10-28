@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+    <style>
+        #container {
+            margin-top: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            color: blue;
+        }
+
+        .active {
+            font-weight: bold;
+        }</style>
+</head>
+<body>
+
+    <h2 id="heading">DOM Example</h2>
+    <div id="container"></div>
+    <button id="btn">Click Me</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let container = document.getElementById("container");
+
+        btn.addEventListener("click", function() {
+
+            // Create an element
+            let p = document.createElement("p");
+
+            // Set text
+            p.innerHTML = "Hello World!";
+
+            // Set attribute
+            p.setAttribute("class", "message");
+            p.setAttribute("id", "para");
+
+            // Append element
+            container.appendChild(p);
+
+            // Add CSS class
+            p.classList.add("active");
+
+        });
+    </script>
+
+</body>
+</html>

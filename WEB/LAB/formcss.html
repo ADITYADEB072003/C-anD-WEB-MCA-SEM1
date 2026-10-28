@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <script>
+        function a(){
+            let l=document.getElementById('tex').value;
+            let l2=document.getElementById('ema').value;
+            let l3=document.getElementById('sel').value;
+                        alert("Welcome"+l+l2);
+            alert(l3);
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        button {
+            background-color: steelblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .full-width {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form class="form-grid">
+        <input type="text" placeholder="Name" required id="tex">
+        <input type="email" placeholder="Email" required id="ema">
+
+        <input type="tel" placeholder="Phone" required>
+
+        <select required id="sel">
+            <option value="">Select Course</option>
+            <option>MCA</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+        </select>
+
+        <textarea class="full-width"
+                  placeholder="Address"
+                  rows="3"></textarea>
+
+        <button class="full-width" type="submit" onclick="a()">
+            Submit
+        </button>
+    </form>
+</div>
+
+</body>
+</html>

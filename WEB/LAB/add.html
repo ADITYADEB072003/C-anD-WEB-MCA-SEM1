@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function a(){
+            let x =document.getElementById('a').value;
+            let y=document.getElementById('b').value;
+            if (y==""||x==""){
+                alert("Input correct value");
+            return 
+        }
+            let sum =parseInt(x)+parseInt(y);
+            alert(sum);
+        }
+    </script>
+</head>
+<body>
+   
+        <input type="number" id="a" required>
+        <input type="number" id="b" required>
+        <button type="button" onclick="a()">ADD</button>
+
+</body>
+</html>

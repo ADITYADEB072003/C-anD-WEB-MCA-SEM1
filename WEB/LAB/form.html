@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <script>
+        function a() {
+            alert("Form submitted successfully!");
+        }
+    </script>
+    <style>
+
+
+    body {
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 2fr;
+        font-family: Arial, sans-serif;
+        background-color: lightblue;
+        margin: 0;
+        padding: 20px;
+    }
+
+    form {
+        max-width: 500px;
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border: 2px solid navy;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        text-align: center;
+        color: navy;
+    }
+
+    fieldset {
+        margin-bottom: 15px;
+        padding: 15px;
+        border: 1px solid gray;
+    }
+
+    input, select {
+        padding: 8px;
+        margin: 5px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: navy;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+        form {
+            width: 100%;
+            padding: 12px;
+        }
+    }
+</style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Student Registration</h1>
+    <img src="/WEB/IMG_9766.JPG" width="40px">
+
+    <form onsubmit="a(); return false;">
+        <fieldset>
+            <legend>Details</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other</legend>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </fieldset>
+
+        <fieldset>
+            <legend>Course</legend>
+
+            <label for="course">Select:</label>
+            <select name="course" id="course">
+                <option value="IT">IT</option>
+                <option value="Web">Web</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

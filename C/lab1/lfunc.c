@@ -12,6 +12,12 @@ int fibonacci(int n){
    }
    return fibonacci(n-1)+fibonacci(n-2);
 }
+int sum(int n){
+    if(n==0){
+        return 0;
+    }
+    return n+sum(n-1);
+}
 int main(){
     int n;
     printf("Enter a number: ");
@@ -20,5 +26,6 @@ int main(){
     for(int i=0;i<n;i++){
         printf("Fibonacci of %d is %d\n",i,fibonacci(i));
     }
+    printf("Sum of first %d natural numbers is %d\n",n,sum(n));
     return 0;
 }

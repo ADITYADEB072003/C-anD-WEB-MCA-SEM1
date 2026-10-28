@@ -5,7 +5,7 @@ import certifi
 from yt_dlp import YoutubeDL
 
 # YouTube Playlist URL
-PLAYLIST_URL = "https://youtube.com/playlist?list=PLBlnK6fEyqRhclwDR4oSl8lRSaEpkxQn9&si=b3A5N5-OnR0h1mpr"
+PLAYLIST_URL = "https://youtube.com/playlist?list=PLxCzCOWd7aiHanm1nA5_fMwbx5dCNFkDX&si=Z_BdsV2lzBvJiquZ"
 
 # LaunchAgents cannot reliably access macOS's protected Documents folder. Keep
 # its persistent data in the user's Application Support folder instead.
