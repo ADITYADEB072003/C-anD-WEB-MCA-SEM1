@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+          function a(){
+          let k=document.getElementById('username').value;
+            let l=document.getElementById('password').value;
+            if(k.trim()==''||l==''){
+                alert("Input");
+            }
+            else if(k=='admin'&&l=='1234'){
+                alert('Display');
+            }
+            else{
+                alert('Invalid');
+            }  
+        }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="username" required>
+        <input type="text" id="password" required>
+        <button type="submit" onclick="a()">Login</button>
+    </body>
+</html>
